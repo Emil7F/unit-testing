@@ -94,20 +94,7 @@
       <recent name="pl.emil7f" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.Main" />
-      <module name="unit-testing-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.emil7f.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MealTest.twoMealsShouldBeEqualWhenPriceAreTheSame">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -121,7 +108,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.activatedAccountShouldHaveActiveFlagSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountTest.defaultDeliveryAddressShouldNotBeNullAfterBeingSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unit-testing-java" />
       <extension name="coverage">
         <pattern>
@@ -131,23 +118,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.emil7f" />
       <option name="MAIN_CLASS_NAME" value="pl.emil7f.AccountTest" />
-      <option name="METHOD_NAME" value="activatedAccountShouldHaveActiveFlagSet" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AccountTest.newlyCreatedAccountShouldNotHaveDefaultDeliveryAddressSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="unit-testing-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.emil7f.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.emil7f" />
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.AccountTest" />
-      <option name="METHOD_NAME" value="newlyCreatedAccountShouldNotHaveDefaultDeliveryAddressSet" />
+      <option name="METHOD_NAME" value="defaultDeliveryAddressShouldNotBeNullAfterBeingSet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,6 +140,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MealTest.referencesToTheSameObjectShouldBeEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unit-testing-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.emil7f.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.emil7f" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.MealTest" />
+      <option name="METHOD_NAME" value="referencesToTheSameObjectShouldBeEqual" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MealTest.shouldReturnDiscountedPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unit-testing-java" />
       <extension name="coverage">
@@ -185,13 +172,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MealTest.twoMealsShouldBeEqualWhenPriceAreTheSame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unit-testing-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.emil7f.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.emil7f" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.MealTest" />
+      <option name="METHOD_NAME" value="twoMealsShouldBeEqualWhenPriceAreTheSame" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MealTest.twoMealsShouldBeEqualWhenPriceAreTheSame" />
         <item itemvalue="JUnit.MealTest.referencesToDifferentObjectShouldNotBeEqual" />
+        <item itemvalue="JUnit.MealTest.referencesToTheSameObjectShouldBeEqual" />
         <item itemvalue="JUnit.MealTest.shouldReturnDiscountedPrice" />
-        <item itemvalue="JUnit.AccountTest.newlyCreatedAccountShouldNotHaveDefaultDeliveryAddressSet" />
-        <item itemvalue="JUnit.AccountTest.activatedAccountShouldHaveActiveFlagSet" />
+        <item itemvalue="JUnit.AccountTest.defaultDeliveryAddressShouldNotBeNullAfterBeingSet" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +210,7 @@
       <workItem from="1606573940813" duration="1220000" />
       <workItem from="1606636862015" duration="38000" />
       <workItem from="1608144920981" duration="4681000" />
-      <workItem from="1608376943267" duration="5064000" />
+      <workItem from="1608376943267" duration="6787000" />
     </task>
     <servers />
   </component>
@@ -253,38 +256,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="310" key="Github.ShareDialog/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608378460883" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1608381568728">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1608383647432">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608381568728" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1608381568727">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608383647432" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1608383647431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608381568727" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1608381568727">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608383647431" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1608383647431">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608381568727" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1608381568728">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608383647431" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1608383647432">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608381568728" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1608149914545">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608383647432" />
+    <state width="1493" height="326" key="GridCell.Tab.1.bottom" timestamp="1608383273036">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608149914545" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1608149914545">
+    <state width="1493" height="326" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608383273036" />
+    <state width="1493" height="326" key="GridCell.Tab.1.center" timestamp="1608383273036">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608149914545" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1608149914545">
+    <state width="1493" height="326" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608383273036" />
+    <state width="1493" height="326" key="GridCell.Tab.1.left" timestamp="1608383273036">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608149914545" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1608149914545">
+    <state width="1493" height="326" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608383273036" />
+    <state width="1493" height="326" key="GridCell.Tab.1.right" timestamp="1608383273036">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608149914545" />
+    <state width="1493" height="326" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608383273036" />
     <state x="513" y="115" key="RollbackChangesDialog" timestamp="1608379239308">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -313,5 +316,16 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608149239235" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pl/emil7f/AccountTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

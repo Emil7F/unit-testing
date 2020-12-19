@@ -2,8 +2,7 @@ package pl.emil7f;
 
 import org.junit.jupiter.api.Test;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AccountTest {
@@ -15,9 +14,7 @@ class AccountTest {
         Account newAccount = new Account();
         //then
         assertFalse(newAccount.isActive());
-        assertThat(newAccount.isActive(), equalTo(false));
-        assertThat(newAccount.isActive(), is(false));
-
+        assertThat(newAccount.isActive()).isFalse();   // AssertJ
     }
 
     @Test
@@ -28,9 +25,8 @@ class AccountTest {
         account.activate();
         //then
         assertTrue(account.isActive());
+        assertThat(account.isActive()).isTrue();    // AssertJ
 
-        assertThat(account.isActive(), equalTo(true));
-        assertThat(account.isActive(), is(true));
 
     }
 
@@ -44,8 +40,7 @@ class AccountTest {
         //then
         assertEquals(null, address);
         assertNull(address);
-
-        assertThat(address, nullValue());
+        assertThat(address).isNull();       // AssertJ
 
     }
     @Test
@@ -58,7 +53,8 @@ class AccountTest {
         Address deliveryAddress = account.getDefaultDeliveryAddress();
         //then
         assertNotNull(deliveryAddress);
-        assertThat(deliveryAddress, notNullValue());
+        assertThat(address).isNotNull();        // AssertJ
+
     }
 
 }
