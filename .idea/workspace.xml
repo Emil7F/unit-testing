@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3d5f8f0b-498d-43c2-8214-2d366e3d4c4a" name="Default Changelist" comment="Hamcrest libary - basic test">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/Meal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/AccountTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/MealTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pl/emil7f/Account.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pl/emil7f/Address.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pl/emil7f/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pl/emil7f/Meal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/pl/emil7f/AccountTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/pl/emil7f/MealTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/unit-testing-java-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit-testing-java.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kvGxjAaEucdrkCDJFY4JnN3Im5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="pl.emil7f" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.emil7f" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.Main" />
+      <module name="unit-testing-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.emil7f.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountTest.activatedAccountShouldHaveActiveFlagSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unit-testing-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.emil7f.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.emil7f" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.AccountTest" />
+      <option name="METHOD_NAME" value="activatedAccountShouldHaveActiveFlagSet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountTest.newlyCreatedAccountShouldNotHaveDefaultDeliveryAddressSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unit-testing-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.emil7f.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.emil7f" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.AccountTest" />
+      <option name="METHOD_NAME" value="newlyCreatedAccountShouldNotHaveDefaultDeliveryAddressSet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MealTest.referencesToDifferentObjectShouldNotBeEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unit-testing-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.emil7f.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.emil7f" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.MealTest" />
+      <option name="METHOD_NAME" value="referencesToDifferentObjectShouldNotBeEqual" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MealTest.shouldReturnDiscountedPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unit-testing-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.emil7f.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.emil7f" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.MealTest" />
+      <option name="METHOD_NAME" value="shouldReturnDiscountedPrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.MealTest.referencesToDifferentObjectShouldNotBeEqual" />
+        <item itemvalue="JUnit.MealTest.shouldReturnDiscountedPrice" />
+        <item itemvalue="JUnit.AccountTest.newlyCreatedAccountShouldNotHaveDefaultDeliveryAddressSet" />
+        <item itemvalue="JUnit.AccountTest.activatedAccountShouldHaveActiveFlagSet" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d5f8f0b-498d-43c2-8214-2d366e3d4c4a" name="Default Changelist" comment="" />
+      <created>1606573902715</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606573902715</updated>
+      <workItem from="1606573903775" duration="21000" />
+      <workItem from="1606573940813" duration="1220000" />
+      <workItem from="1606636862015" duration="38000" />
+      <workItem from="1608144920981" duration="4681000" />
+      <workItem from="1608376943267" duration="5064000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="395" y="91" key="#Inspections" timestamp="1608147026842">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="395" y="91" key="#Inspections/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608147026842" />
+    <state x="249" y="0" key="#Project_Structure" timestamp="1608378712251">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606573952603" />
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608378712251" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1608146509573">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608146509573" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1608381593293">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606574561227" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608381593293" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606636897076" />
+    <state width="317" height="160" key="Git.Branch.Popup" timestamp="1608380031432">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="317" height="160" key="Git.Branch.Popup/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608380031432" />
+    <state x="631" y="310" key="Github.ShareDialog" timestamp="1608378460883">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="631" y="310" key="Github.ShareDialog/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608378460883" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1608381568728">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608381568728" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1608381568727">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608381568727" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1608381568727">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608381568727" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1608381568728">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608381568728" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1608149914545">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608149914545" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1608149914545">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608149914545" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1608149914545">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608149914545" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1608149914545">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608149914545" />
+    <state x="513" y="115" key="RollbackChangesDialog" timestamp="1608379239308">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="513" y="115" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608379239308" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1608381706416">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608381706416" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1608382035976">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608382035976" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608379063338">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608379063338" />
+    <state x="540" y="207" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1608146568417">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="540" y="207" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608146568417" />
+    <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1608149233192">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608149233192" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608149239235">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608149239235" />
+  </component>
+</project>
