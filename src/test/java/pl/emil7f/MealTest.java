@@ -4,8 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.sameInstance;
+import static org.hamcrest.Matchers.*;
 
 
 class MealTest {
@@ -41,6 +40,7 @@ class MealTest {
         Meal meal2 = new Meal(10);
         //then
         Assertions.assertNotSame(meal1, meal2);
+        assertThat(meal1, not(sameInstance(meal2)));
     }
 
     @Test
@@ -49,9 +49,9 @@ class MealTest {
         Meal meal1 = new Meal(10, "Burger");
         Meal meal2 = new Meal(10, "Burger");
         // when
-    Assertions.assertEquals(meal1,meal2);
-    //then
-
+        //then
+        Assertions.assertEquals(meal1,meal2);
+        assertThat(meal1, equalTo(meal2));
     }
 
 
