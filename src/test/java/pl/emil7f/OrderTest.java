@@ -1,5 +1,6 @@
 package pl.emil7f;
 
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -17,6 +18,11 @@ class OrderTest {
     @BeforeEach
     void initializeOrder(){
         order = new Order();
+    }
+
+    @AfterEach
+    void cleanUp(){
+        order.cancel();
     }
 
     @Test
