@@ -14,8 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d5f8f0b-498d-43c2-8214-2d366e3d4c4a" name="Default Changelist" comment="Hamcrest libary - basic test">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/Meal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/Meal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/emil7f/MealTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/MealTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,7 @@
       <recent name="pl.emil7f" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OrderTest.testIfTwoMealListsAreTheSame">
+  <component name="RunManager" selected="JUnit.MealTest.exceptionShouldBeThrownIfDiscountIsHigherThanThePrice">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -79,6 +80,22 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MealTest.exceptionShouldBeThrownIfDiscountIsHigherThanThePrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unit-testing-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.emil7f.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.emil7f" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.MealTest" />
+      <option name="METHOD_NAME" value="exceptionShouldBeThrownIfDiscountIsHigherThanThePrice" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -94,22 +111,6 @@
       <option name="PACKAGE_NAME" value="pl.emil7f" />
       <option name="MAIN_CLASS_NAME" value="pl.emil7f.OrderTest" />
       <option name="METHOD_NAME" value="addingMealToOrderShouldIncreaseOrderSize" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OrderTest.mealListShouldBeEmptyAfterCreationOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="unit-testing-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.emil7f.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.emil7f" />
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.OrderTest" />
-      <option name="METHOD_NAME" value="mealListShouldBeEmptyAfterCreationOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MealTest.exceptionShouldBeThrownIfDiscountIsHigherThanThePrice" />
         <item itemvalue="JUnit.OrderTest.testIfTwoMealListsAreTheSame" />
         <item itemvalue="JUnit.OrderTest.mealsShouldBeInCorrectOrderAfterAddingThemToOrder" />
         <item itemvalue="JUnit.OrderTest.removingMealFromOrderShouldDecreaseOrderSize" />
         <item itemvalue="JUnit.OrderTest.addingMealToOrderShouldIncreaseOrderSize" />
-        <item itemvalue="JUnit.OrderTest.mealListShouldBeEmptyAfterCreationOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +187,7 @@
       <workItem from="1606636862015" duration="38000" />
       <workItem from="1608144920981" duration="4681000" />
       <workItem from="1608376943267" duration="5064000" />
-      <workItem from="1608479422376" duration="1150000" />
+      <workItem from="1608479422376" duration="2134000" />
     </task>
     <servers />
   </component>
@@ -233,25 +234,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="310" key="Github.ShareDialog/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608378460883" />
-    <state width="1493" height="147" key="GridCell.Tab.0.bottom" timestamp="1608480516890">
+    <state width="1493" height="147" key="GridCell.Tab.0.bottom" timestamp="1608481281905">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608480516890" />
+    <state width="1493" height="147" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608481281905" />
     <state width="1493" height="326" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
-    <state width="1493" height="147" key="GridCell.Tab.0.center" timestamp="1608480516890">
+    <state width="1493" height="147" key="GridCell.Tab.0.center" timestamp="1608481281905">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608480516890" />
+    <state width="1493" height="147" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608481281905" />
     <state width="1493" height="326" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
-    <state width="1493" height="147" key="GridCell.Tab.0.left" timestamp="1608480516890">
+    <state width="1493" height="147" key="GridCell.Tab.0.left" timestamp="1608481281905">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608480516890" />
+    <state width="1493" height="147" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608481281905" />
     <state width="1493" height="326" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
-    <state width="1493" height="147" key="GridCell.Tab.0.right" timestamp="1608480516890">
+    <state width="1493" height="147" key="GridCell.Tab.0.right" timestamp="1608481281905">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="147" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608480516890" />
+    <state width="1493" height="147" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608481281905" />
     <state width="1493" height="326" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
     <state width="1493" height="326" key="GridCell.Tab.1.bottom" timestamp="1608400060691">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -297,9 +298,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="478" y="145" width="579" height="534" key="find.popup/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608149233192" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608149239235">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608480971673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608149239235" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608480971673" />
   </component>
 </project>
