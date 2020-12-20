@@ -1,13 +1,17 @@
 package pl.emil7f;
 
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@DisplayName("Test cases for Cart")
 class CartTest {
 
+    @Disabled  // test is ignored
     @Test
     void simulateLargeOrder(){
         // given
