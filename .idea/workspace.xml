@@ -14,31 +14,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d5f8f0b-498d-43c2-8214-2d366e3d4c4a" name="Default Changelist" comment="Hamcrest libary - basic test">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/Meal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/AccountTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/MealTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/emil7f/Account.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/emil7f/Address.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/emil7f/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/pl/emil7f/Meal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/pl/emil7f/AccountTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/pl/emil7f/MealTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/unit-testing-java-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit-testing-java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,34 +71,19 @@
       <recent name="pl.emil7f" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MealTest.referencesToDifferentObjectShouldNotBeEqual">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.Main" />
-      <module name="unit-testing-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.emil7f.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.OrderTest.testIfTwoMealListsAreTheSame">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.newlyCreatedAccountShouldNotHaveDefaultDeliveryAddressSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderTest.addingMealToOrderShouldIncreaseOrderSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unit-testing-java" />
       <extension name="coverage">
         <pattern>
@@ -130,14 +92,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.emil7f" />
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.AccountTest" />
-      <option name="METHOD_NAME" value="newlyCreatedAccountShouldNotHaveDefaultDeliveryAddressSet" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.OrderTest" />
+      <option name="METHOD_NAME" value="addingMealToOrderShouldIncreaseOrderSize" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MealTest.referencesToDifferentObjectShouldNotBeEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderTest.mealListShouldBeEmptyAfterCreationOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unit-testing-java" />
       <extension name="coverage">
         <pattern>
@@ -146,14 +108,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.emil7f" />
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.MealTest" />
-      <option name="METHOD_NAME" value="referencesToDifferentObjectShouldNotBeEqual" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.OrderTest" />
+      <option name="METHOD_NAME" value="mealListShouldBeEmptyAfterCreationOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MealTest.shouldReturnDiscountedPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderTest.mealsShouldBeInCorrectOrderAfterAddingThemToOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unit-testing-java" />
       <extension name="coverage">
         <pattern>
@@ -162,14 +124,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.emil7f" />
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.MealTest" />
-      <option name="METHOD_NAME" value="shouldReturnDiscountedPrice" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.OrderTest" />
+      <option name="METHOD_NAME" value="mealsShouldBeInCorrectOrderAfterAddingThemToOrder" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MealTest.twoMealsShouldBeEqualWhenPriceAreTheSame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OrderTest.removingMealFromOrderShouldDecreaseOrderSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unit-testing-java" />
       <extension name="coverage">
         <pattern>
@@ -178,8 +140,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.emil7f" />
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.MealTest" />
-      <option name="METHOD_NAME" value="twoMealsShouldBeEqualWhenPriceAreTheSame" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.OrderTest" />
+      <option name="METHOD_NAME" value="removingMealFromOrderShouldDecreaseOrderSize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderTest.testIfTwoMealListsAreTheSame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unit-testing-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.emil7f.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.emil7f" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.OrderTest" />
+      <option name="METHOD_NAME" value="testIfTwoMealListsAreTheSame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MealTest.referencesToDifferentObjectShouldNotBeEqual" />
-        <item itemvalue="JUnit.MealTest.twoMealsShouldBeEqualWhenPriceAreTheSame" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.MealTest.shouldReturnDiscountedPrice" />
-        <item itemvalue="JUnit.AccountTest.newlyCreatedAccountShouldNotHaveDefaultDeliveryAddressSet" />
+        <item itemvalue="JUnit.OrderTest.testIfTwoMealListsAreTheSame" />
+        <item itemvalue="JUnit.OrderTest.mealsShouldBeInCorrectOrderAfterAddingThemToOrder" />
+        <item itemvalue="JUnit.OrderTest.removingMealFromOrderShouldDecreaseOrderSize" />
+        <item itemvalue="JUnit.OrderTest.addingMealToOrderShouldIncreaseOrderSize" />
+        <item itemvalue="JUnit.OrderTest.mealListShouldBeEmptyAfterCreationOrder" />
       </list>
     </recent_temporary>
   </component>
@@ -208,6 +186,7 @@
       <workItem from="1606636862015" duration="38000" />
       <workItem from="1608144920981" duration="4681000" />
       <workItem from="1608376943267" duration="5064000" />
+      <workItem from="1608479422376" duration="1150000" />
     </task>
     <servers />
   </component>
@@ -224,6 +203,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="91" key="#Inspections" timestamp="1608147026842">
@@ -235,10 +215,10 @@
     </state>
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1606573952603" />
     <state x="249" y="0" key="#Project_Structure/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608378712251" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1608146509573">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1608385333170">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608146509573" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608385333170" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1608381593293">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -253,38 +233,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="310" key="Github.ShareDialog/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608378460883" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1608384875904">
+    <state width="1493" height="147" key="GridCell.Tab.0.bottom" timestamp="1608480516890">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608384875904" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1608384875903">
+    <state width="1493" height="147" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608480516890" />
+    <state width="1493" height="326" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
+    <state width="1493" height="147" key="GridCell.Tab.0.center" timestamp="1608480516890">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608384875903" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1608384875903">
+    <state width="1493" height="147" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608480516890" />
+    <state width="1493" height="326" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
+    <state width="1493" height="147" key="GridCell.Tab.0.left" timestamp="1608480516890">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608384875903" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1608384875904">
+    <state width="1493" height="147" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608480516890" />
+    <state width="1493" height="326" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
+    <state width="1493" height="147" key="GridCell.Tab.0.right" timestamp="1608480516890">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608384875904" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1608149914545">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="147" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608480516890" />
+    <state width="1493" height="326" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
+    <state width="1493" height="326" key="GridCell.Tab.1.bottom" timestamp="1608400060691">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608149914545" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1608149914545">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="326" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
+    <state width="1493" height="326" key="GridCell.Tab.1.center" timestamp="1608400060691">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608149914545" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1608149914545">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="326" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
+    <state width="1493" height="326" key="GridCell.Tab.1.left" timestamp="1608400060691">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608149914545" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1608149914545">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state width="1493" height="326" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
+    <state width="1493" height="326" key="GridCell.Tab.1.right" timestamp="1608400060691">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608149914545" />
+    <state width="1493" height="326" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
     <state x="513" y="115" key="RollbackChangesDialog" timestamp="1608379239308">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -301,10 +289,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608379063338" />
-    <state x="540" y="207" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1608146568417">
+    <state x="540" y="207" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1608385535153">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="540" y="207" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608146568417" />
+    <state x="540" y="207" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608385535153" />
     <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1608149233192">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
