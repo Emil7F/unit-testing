@@ -30,12 +30,19 @@
             <scope>test</scope>
         </dependency>
 
-<!--  https://search.maven.org/artifact/org.hamcrest/hamcrest/2.2/jar   -->
-<!--        Core API and libraries of hamcrest matcher framework.       -->
+        <!--  https://search.maven.org/artifact/org.hamcrest/hamcrest/2.2/jar   -->
+        <!--        Core API and libraries of hamcrest matcher framework.       -->
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest</artifactId>
             <version>2.2</version>
+        </dependency>
+
+        <!--        To parametric tests         -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>5.0.0</version>
         </dependency>
 
     </dependencies>

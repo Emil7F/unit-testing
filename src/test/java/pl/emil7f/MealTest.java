@@ -1,7 +1,10 @@
 package pl.emil7f;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
@@ -46,22 +49,29 @@ class MealTest {
 
     @Test
     void twoMealsShouldBeEqualWhenPriceAreTheSame() {
-    // given
+        // given
         Meal meal1 = new Meal(10, "Burger");
         Meal meal2 = new Meal(10, "Burger");
         // when
         //then
-        Assertions.assertEquals(meal1,meal2);
+        Assertions.assertEquals(meal1, meal2);
         assertThat(meal1, equalTo(meal2));
     }
 
     @Test
-    void exceptionShouldBeThrownIfDiscountIsHigherThanThePrice(){
+    void exceptionShouldBeThrownIfDiscountIsHigherThanThePrice() {
         // given
         Meal meal = new Meal(8, "Soup");
         // when
         //then
         assertThrows(IllegalArgumentException.class, () -> meal.getDiscountedPrice(10));
+    }
+
+    @ParameterizedTest
+    @DisplayName("Test where source of parameters is array given in @valueSource annotation")
+    @ValueSource(ints = {5, 10, 15, 19})
+    void mealPricesShouldBeLowerThan20(int price) {
+        assertThat(price, lessThan(20));
     }
 
 
