@@ -1,10 +1,14 @@
 package pl.emil7f;
 
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.assumingThat;
 
 class AccountTest {
 
@@ -59,6 +63,36 @@ class AccountTest {
         //then
         assertNotNull(deliveryAddress);
         assertThat(deliveryAddress, notNullValue());
+    }
+
+    @Test
+    @DisplayName("assumingThat() example")
+    void newAccountWithNotNullAddressShouldBeActive(){
+        // given
+        Address address = new Address("Street", "15");
+        // when
+        Account account = new Account(address);
+
+        //then
+        /**
+         * assumingThat(boolean, Executable ()-> )
+         * Execute function only if the supplied assumption is valid
+         */
+        assumingThat(address != null, ()-> {
+            assertTrue(account.isActive());
+        } );
+    }
+
+    @RepeatedTest(5)
+    @DisplayName("5 times repeated for newly created account is not active")
+    void newlyCreatedAccountShouldNotBeActivatedRepeatedFiveTimes(){
+        // given
+        // when
+        Account account = new Account();
+
+        //then
+        assertFalse((account.isActive()));
+
     }
 
 }
