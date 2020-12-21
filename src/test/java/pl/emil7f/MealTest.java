@@ -4,10 +4,17 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 
@@ -72,6 +79,39 @@ class MealTest {
     @ValueSource(ints = {5, 10, 15, 19})
     void mealPricesShouldBeLowerThan20(int price) {
         assertThat(price, lessThan(20));
+    }
+
+    @ParameterizedTest
+    @DisplayName("First test where source is static method")
+    @MethodSource("createMealsWithNameAndPrice")
+    void burgersShouldHaveCorrectNameAndPrice(String name, int price) {
+        assertThat(name, containsString("burger"));
+        assertThat(price, greaterThanOrEqualTo(9));
+
+    }
+
+    private static Stream<Arguments> createMealsWithNameAndPrice() {
+        return Stream.of(
+                Arguments.of("Hamburger", 10),
+                Arguments.of("Cheeseburger", 10)
+        );
+    }
+
+    @ParameterizedTest
+    @DisplayName( "Second test where source is static method")
+    @MethodSource("createCakeNames")
+    void cakesShouldHaveCorrectNames(String name){
+        assertAll(
+                ()-> assertThat(name, containsString("Cake")),
+                ()-> assertThat(name, notNullValue())
+        );
+
+
+    }
+
+    private static Stream<String> createCakeNames(){
+        List<String> cakeNames = Arrays.asList("CheeseCake", "FruitCake", "CupCake");
+        return cakeNames.stream();
     }
 
 

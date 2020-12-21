@@ -12,7 +12,7 @@ class OrderStatusTest {
     @ParameterizedTest
     @DisplayName("Test where source of parameters is enum class")
     @EnumSource(OrderStatus.class)
-    void allOrderStatusShouldBeOrderThan15Characters(OrderStatus orderStatus){
+    void allOrderStatusShouldBeOrderThan15Characters(OrderStatus orderStatus) {
         assertThat(orderStatus.toString().length(), lessThan(15));
     }
 
