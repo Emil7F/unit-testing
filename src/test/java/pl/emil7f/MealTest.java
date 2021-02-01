@@ -3,6 +3,7 @@ package pl.emil7f;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -98,23 +99,37 @@ class MealTest {
     }
 
     @ParameterizedTest
-    @DisplayName( "Second test where source is static method")
+    @DisplayName("Second test where source is static method")
     @MethodSource("createCakeNames")
-    void cakesShouldHaveCorrectNames(String name){
+    void cakesShouldHaveCorrectNames(String name) {
         assertAll(
-                ()-> assertThat(name, containsString("Cake")),
-                ()-> assertThat(name, notNullValue())
+                () -> assertThat(name, containsString("Cake")),
+                () -> assertThat(name, notNullValue())
         );
 
 
     }
 
-    private static Stream<String> createCakeNames(){
+    private static Stream<String> createCakeNames() {
         List<String> cakeNames = Arrays.asList("CheeseCake", "FruitCake", "CupCake");
         return cakeNames.stream();
     }
 
-
+    /**
+     * @ExtendWith annotation allow us to ignore exceptions.
+     * implement TestExecutionExceptionHandler to your class and override handleTestExecutionException()
+     *
+     */
+    @ExtendWith(IAExceptionIgnoreExtension.class)
+    @ParameterizedTest
+    @DisplayName("Test where source of parameters is array given in @valueSource annotation")
+    @ValueSource(ints = {3, 5, 1, 8})
+    void mealPricesShouldBeLowerThan10(int price) {
+        if (price > 5) {
+            throw new IllegalArgumentException();
+        }
+        assertThat(price, lessThan(10));
+    }
 
 
 }
