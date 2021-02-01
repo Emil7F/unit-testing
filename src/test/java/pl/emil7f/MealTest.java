@@ -1,8 +1,6 @@
 package pl.emil7f;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -10,6 +8,8 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -17,6 +17,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.DynamicTest.dynamicTest;
 
 
 class MealTest {
@@ -131,5 +132,13 @@ class MealTest {
         assertThat(price, lessThan(10));
     }
 
+    @TestFactory
+    Collection<DynamicTest> dynamicTestCollection(){
+        return Arrays.asList(
+                dynamicTest("Dynamic test 1", ()->assertThat(5, lessThan(6))),
+                dynamicTest("Dynamic test2", ()-> assertThat("Laska".length(), greaterThanOrEqualTo(4)))
+
+        );
+    }
 
 }
