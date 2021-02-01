@@ -3,6 +3,7 @@ package pl.emil7f;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import java.util.Arrays;
 import java.util.List;
@@ -11,17 +12,20 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
+@ExtendWith(BeforeAfterExtension.class)
 class OrderTest {
 
     private Order order;
 
     @BeforeEach
-    void initializeOrder(){
+    void initializeOrder() {
+        System.out.println("Before each");
         order = new Order();
     }
 
     @AfterEach
-    void cleanUp(){
+    void cleanUp() {
+        System.out.println("After each");
         order.cancel();
     }
 
@@ -60,7 +64,7 @@ class OrderTest {
     }
 
     @Test
-    void removingMealFromOrderShouldDecreaseOrderSize(){
+    void removingMealFromOrderShouldDecreaseOrderSize() {
         // given
         Meal meal = new Meal(3, "Burger");
         order.addMealToOrder(meal);
@@ -74,7 +78,7 @@ class OrderTest {
     }
 
     @Test
-    void mealsShouldBeInCorrectOrderAfterAddingThemToOrder(){
+    void mealsShouldBeInCorrectOrderAfterAddingThemToOrder() {
         // given
         Meal meal1 = new Meal(15, "Pizza");
         Meal meal2 = new Meal(11, "Hot Dog");
@@ -85,13 +89,13 @@ class OrderTest {
         assertThat(order.getMeals(), hasSize(2));
         assertThat(order.getMeals().get(0), equalTo(meal1));
         assertThat(order.getMeals().get(1), equalTo(meal2));
-        assertThat(order.getMeals(), contains(meal1,meal2));
-        assertThat(order.getMeals(), containsInAnyOrder(meal2,meal1));
+        assertThat(order.getMeals(), contains(meal1, meal2));
+        assertThat(order.getMeals(), containsInAnyOrder(meal2, meal1));
 
     }
 
     @Test
-    void testIfTwoMealListsAreTheSame(){
+    void testIfTwoMealListsAreTheSame() {
         // given
         Meal meal1 = new Meal(15, "Pizza");
         Meal meal2 = new Meal(11, "Hot Dog");
@@ -99,7 +103,7 @@ class OrderTest {
         // when
         List<Meal> meals1 = Arrays.asList(meal1, meal2);
         List<Meal> meals2 = Arrays.asList(meal1, meal2);
-                //then
+        //then
         assertThat(meals1, is(meals2));
     }
 
