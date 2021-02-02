@@ -15,12 +15,20 @@ public class Order {
         meals.add(meal);
     }
 
-    public void removeMealFromOrder(Meal meal){
+    public void removeMealFromOrder(Meal meal) {
         meals.remove(meal);
     }
 
-    void cancel(){
+    void cancel() {
         this.meals.clear();
+    }
+
+    int totalPrice() {
+        int sum = this.meals.stream().mapToInt(meal -> meal.getPrice()).sum();
+        if (sum < 0) {
+            throw new IllegalStateException("Price limit exceeded");
+        }
+        return sum;
     }
 
     @Override
