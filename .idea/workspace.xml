@@ -14,11 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d5f8f0b-498d-43c2-8214-2d366e3d4c4a" name="Default Changelist" comment="Hamcrest libary - basic test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/OrderBackupExecutionOrderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/OrderBackup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/OrderBackup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/emil7f/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/OrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/emil7f/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/AccountTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,16 +73,14 @@
       <recent name="pl.emil7f" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OrderBackupExecutionOrderTest.callingBackupWithoutCreatingAFileFirstShouldThrowException">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AccountTest.validEmailShouldBeSet">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,6 +101,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AccountTest.validEmailShouldBeSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unit-testing-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.emil7f.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.emil7f" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.AccountTest" />
+      <option name="METHOD_NAME" value="validEmailShouldBeSet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MealTest.calculateMealPrices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unit-testing-java" />
       <extension name="coverage">
@@ -116,22 +128,6 @@
       <option name="PACKAGE_NAME" value="pl.emil7f" />
       <option name="MAIN_CLASS_NAME" value="pl.emil7f.MealTest" />
       <option name="METHOD_NAME" value="calculateMealPrices" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MealTest.dynamicTestCollection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="unit-testing-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.emil7f.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.emil7f" />
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.MealTest" />
-      <option name="METHOD_NAME" value="dynamicTestCollection" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AccountTest.validEmailShouldBeSet" />
+        <item itemvalue="JUnit.AccountTest.invalidEmailShouldThrowException" />
         <item itemvalue="JUnit.OrderBackupExecutionOrderTest.callingBackupWithoutCreatingAFileFirstShouldThrowException" />
         <item itemvalue="JUnit.OrderTest.emptyOrderTotalPriceShouldEqualZero" />
-        <item itemvalue="JUnit.AccountTest.invalidEmailShouldThrowException" />
         <item itemvalue="JUnit.MealTest.calculateMealPrices" />
-        <item itemvalue="JUnit.MealTest.dynamicTestCollection" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +192,8 @@
       <workItem from="1608572809018" duration="5851000" />
       <workItem from="1611602294345" duration="690000" />
       <workItem from="1612200081505" duration="7239000" />
-      <workItem from="1612292542217" duration="3459000" />
+      <workItem from="1612292542217" duration="3673000" />
+      <workItem from="1612372245344" duration="1232000" />
     </task>
     <servers />
   </component>
@@ -248,28 +245,28 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="310" key="Github.ShareDialog/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608378460883" />
-    <state width="1493" height="571" key="GridCell.Tab.0.bottom" timestamp="1612295434480">
+    <state width="1493" height="571" key="GridCell.Tab.0.bottom" timestamp="1612373470460">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="571" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612295434480" />
+    <state width="1493" height="571" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612373470460" />
     <state width="1493" height="331" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966742" />
     <state width="1493" height="326" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
-    <state width="1493" height="571" key="GridCell.Tab.0.center" timestamp="1612295434480">
+    <state width="1493" height="571" key="GridCell.Tab.0.center" timestamp="1612373470460">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="571" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612295434480" />
+    <state width="1493" height="571" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612373470460" />
     <state width="1493" height="331" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966741" />
     <state width="1493" height="326" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
-    <state width="1493" height="571" key="GridCell.Tab.0.left" timestamp="1612295434480">
+    <state width="1493" height="571" key="GridCell.Tab.0.left" timestamp="1612373470460">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="571" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612295434480" />
+    <state width="1493" height="571" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612373470460" />
     <state width="1493" height="331" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966741" />
     <state width="1493" height="326" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
-    <state width="1493" height="571" key="GridCell.Tab.0.right" timestamp="1612295434480">
+    <state width="1493" height="571" key="GridCell.Tab.0.right" timestamp="1612373470460">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="571" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612295434480" />
+    <state width="1493" height="571" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612373470460" />
     <state width="1493" height="331" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966742" />
     <state width="1493" height="326" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
     <state width="1493" height="326" key="GridCell.Tab.1.bottom" timestamp="1608400060691">
@@ -323,10 +320,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612200753315" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1612203017355">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1612372974636">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612203017355" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612372974636" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608480971673" />
   </component>
   <component name="XDebuggerManager">
@@ -336,14 +333,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/pl/emil7f/OrderBackupTest.java</url>
           <line>7</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/pl/emil7f/AccountTest.java</url>
-          <line>98</line>
-          <properties class="pl.emil7f.AccountTest" method="invalidEmailShouldThrowException">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

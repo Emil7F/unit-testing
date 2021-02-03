@@ -52,10 +52,11 @@ class AccountTest {
         assertThat(address, nullValue());
 
     }
+
     @Test
-    void defaultDeliveryAddressShouldNotBeNullAfterBeingSet(){
+    void defaultDeliveryAddressShouldNotBeNullAfterBeingSet() {
         // given
-       Address address = new Address("Krakowska", "7");
+        Address address = new Address("Krakowska", "7");
         Account account = new Account();
         account.setDefaultDeliveryAddress(address);
         // when
@@ -67,7 +68,7 @@ class AccountTest {
 
     @Test
     @DisplayName("assumingThat() example")
-    void newAccountWithNotNullAddressShouldBeActive(){
+    void newAccountWithNotNullAddressShouldBeActive() {
         // given
         Address address = new Address("Street", "15");
         // when
@@ -78,14 +79,14 @@ class AccountTest {
          * assumingThat(boolean, Executable ()-> )
          * Execute function only if the supplied assumption is valid
          */
-        assumingThat(address != null, ()-> {
+        assumingThat(address != null, () -> {
             assertTrue(account.isActive());
-        } );
+        });
     }
 
     @RepeatedTest(5)
     @DisplayName("5 times repeated for newly created account is not active")
-    void newlyCreatedAccountShouldNotBeActivatedRepeatedFiveTimes(){
+    void newlyCreatedAccountShouldNotBeActivatedRepeatedFiveTimes() {
         // given
         // when
         Account account = new Account();
@@ -95,13 +96,23 @@ class AccountTest {
 
     }
 
-     @Test
-    void invalidEmailShouldThrowException(){
-         // given
-         Account account = new Account();
-         // when
-         //then
-         assertThrows(IllegalArgumentException.class, () -> account.setEmail("wrongEmail"));
-     }
+    @Test
+    void invalidEmailShouldThrowException() {
+        // given
+        Account account = new Account();
+        // when
+        //then
+        assertThrows(IllegalArgumentException.class, () -> account.setEmail("wrongEmail"));
+    }
+
+    @Test
+    void validEmailShouldBeSet() {
+        // given
+        Account account = new Account();
+        // when
+        account.setEmail("emilfigzal@gmail.com");
+        //then
+        assertThat(account.getEmail(), is("emilfigzal@gmail.com"));
+    }
 
 }
