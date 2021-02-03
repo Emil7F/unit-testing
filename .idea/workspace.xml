@@ -81,7 +81,7 @@
       <recent name="pl.emil7f" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AccountServiceTest.getAllActiveAccounts">
+  <component name="RunManager" selected="JUnit.AccountServiceTest.getNoActiveAccounts">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.emil7f.Main" />
       <module name="unit-testing-java" />
@@ -138,7 +138,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountTest.invalidEmailShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AccountServiceTest.getNoActiveAccounts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unit-testing-java" />
       <extension name="coverage">
         <pattern>
@@ -147,8 +147,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.emil7f.account" />
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.account.AccountTest" />
-      <option name="METHOD_NAME" value="invalidEmailShouldThrowException" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.account.AccountServiceTest" />
+      <option name="METHOD_NAME" value="getNoActiveAccounts" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -172,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AccountServiceTest.getNoActiveAccounts" />
         <item itemvalue="JUnit.AccountServiceTest.getAllActiveAccounts" />
         <item itemvalue="JUnit.AccountServiceStubTest.getAllActiveAccounts" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.AccountTest.validEmailShouldBeSet" />
-        <item itemvalue="JUnit.AccountTest.invalidEmailShouldThrowException" />
       </list>
     </recent_temporary>
   </component>
