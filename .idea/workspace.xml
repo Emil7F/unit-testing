@@ -14,22 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d5f8f0b-498d-43c2-8214-2d366e3d4c4a" name="Default Changelist" comment="Hamcrest libary - basic test">
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/account/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/account/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/BeforeAfterExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/extensions/BeforeAfterExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/IAExceptionIgnoreExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/extensions/IAExceptionIgnoreExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/OrderBackup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/order/OrderBackup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/order/OrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/emil7f/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/account/AccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/emil7f/AddressTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/account/AddressTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/emil7f/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/CartTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/emil7f/MealTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/MealTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/emil7f/OrderBackupExecutionOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/OrderBackupExecutionOrderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/emil7f/OrderBackupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/order/OrderBackupTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/emil7f/OrderStatusTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/order/OrderStatusTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/emil7f/OrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/order/OrderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/account/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/account/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/account/AccountRepositoryStub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/account/AccountServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
@@ -77,7 +67,13 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="pl.emil7f.account" />
       <recent name="pl.emil7f" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pl.emil7f.order" />
+      <recent name="pl.emil7f" />
+      <recent name="pl.emil7f.account" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -86,7 +82,7 @@
       <recent name="pl.emil7f" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.AccountServiceTest.getAllActiveAccounts">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.emil7f.Main" />
       <module name="unit-testing-java" />
@@ -107,6 +103,22 @@
         </value>
       </option>
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceTest.getAllActiveAccounts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unit-testing-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.emil7f.account.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.emil7f.account" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.account.AccountServiceTest" />
+      <option name="METHOD_NAME" value="getAllActiveAccounts" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,29 +171,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OrderTest.emptyOrderTotalPriceShouldEqualZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="unit-testing-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.emil7f.account.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.emil7f.order" />
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.order.OrderTest" />
-      <option name="METHOD_NAME" value="emptyOrderTotalPriceShouldEqualZero" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AccountServiceTest.getAllActiveAccounts" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.AccountTest.validEmailShouldBeSet" />
         <item itemvalue="JUnit.AccountTest.invalidEmailShouldThrowException" />
         <item itemvalue="JUnit.OrderBackupExecutionOrderTest.callingBackupWithoutCreatingAFileFirstShouldThrowException" />
-        <item itemvalue="JUnit.OrderTest.emptyOrderTotalPriceShouldEqualZero" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +199,7 @@
       <workItem from="1611602294345" duration="690000" />
       <workItem from="1612200081505" duration="7239000" />
       <workItem from="1612292542217" duration="3673000" />
-      <workItem from="1612372245344" duration="2109000" />
+      <workItem from="1612372245344" duration="3879000" />
     </task>
     <servers />
   </component>
@@ -236,19 +232,19 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="517" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612201809274" />
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1612205716353">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1612376349402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612205716353" />
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612376349402" />
     <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608576956153" />
     <state x="386" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1612374398049">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="386" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612374398049" />
-    <state x="551" y="281" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1612374472959">
+    <state x="551" y="281" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1612374516258">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="551" y="281" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612374472959" />
+    <state x="551" y="281" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612374516258" />
     <state x="566" y="294" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1612374404322">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -267,28 +263,28 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="310" key="Github.ShareDialog/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608378460883" />
-    <state width="1493" height="571" key="GridCell.Tab.0.bottom" timestamp="1612373582781">
+    <state width="1493" height="571" key="GridCell.Tab.0.bottom" timestamp="1612376730090">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="571" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612373582781" />
+    <state width="1493" height="571" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612376730090" />
     <state width="1493" height="331" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966742" />
     <state width="1493" height="326" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
-    <state width="1493" height="571" key="GridCell.Tab.0.center" timestamp="1612373582781">
+    <state width="1493" height="571" key="GridCell.Tab.0.center" timestamp="1612376730090">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="571" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612373582781" />
+    <state width="1493" height="571" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612376730090" />
     <state width="1493" height="331" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966741" />
     <state width="1493" height="326" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
-    <state width="1493" height="571" key="GridCell.Tab.0.left" timestamp="1612373582781">
+    <state width="1493" height="571" key="GridCell.Tab.0.left" timestamp="1612376730090">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="571" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612373582781" />
+    <state width="1493" height="571" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612376730090" />
     <state width="1493" height="331" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966741" />
     <state width="1493" height="326" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
-    <state width="1493" height="571" key="GridCell.Tab.0.right" timestamp="1612373582781">
+    <state width="1493" height="571" key="GridCell.Tab.0.right" timestamp="1612376730090">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="571" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612373582781" />
+    <state width="1493" height="571" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612376730090" />
     <state width="1493" height="331" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966742" />
     <state width="1493" height="326" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
     <state width="1493" height="326" key="GridCell.Tab.1.bottom" timestamp="1608400060691">
@@ -329,10 +325,10 @@
     </state>
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612200796455" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608379063338" />
-    <state x="540" y="207" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1612201206904">
+    <state x="540" y="207" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1612376193469">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="540" y="207" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612201206904" />
+    <state x="540" y="207" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612376193469" />
     <state x="540" y="207" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608578366470" />
     <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1608149233192">
       <screen x="0" y="0" width="1536" height="824" />
