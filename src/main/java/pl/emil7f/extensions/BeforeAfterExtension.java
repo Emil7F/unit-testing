@@ -1,4 +1,4 @@
-package pl.emil7f;
+package pl.emil7f.extensions;
 
 import org.junit.jupiter.api.extension.AfterEachCallback;
 import org.junit.jupiter.api.extension.BeforeEachCallback;

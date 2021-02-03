@@ -1,6 +1,9 @@
-package pl.emil7f;
+package pl.emil7f.order;
 
 import org.junit.jupiter.api.*;
+import pl.emil7f.Meal;
+import pl.emil7f.order.Order;
+import pl.emil7f.order.OrderBackup;
 
 import java.io.IOException;
 
@@ -34,7 +37,7 @@ class OrderBackupTest {
     void backOrderWithOneMeal() throws IOException {
         // given
         Meal meal = new Meal(15, "Icecream");
-        Order order = new Order();
+        pl.emil7f.order.Order order = new Order();
         order.addMealToOrder(meal);
         // when
         orderBackup.backupOrder(order);

@@ -1,4 +1,4 @@
-package pl.emil7f;
+package pl.emil7f.account;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;

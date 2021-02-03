@@ -7,6 +7,8 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
+import pl.emil7f.extensions.IAExceptionIgnoreExtension;
+import pl.emil7f.order.Order;
 
 import java.util.*;
 import java.util.stream.Stream;
@@ -143,7 +145,7 @@ class MealTest {
      */
     @TestFactory
     Collection<DynamicTest> calculateMealPrices() {
-        Order order = new Order();
+        pl.emil7f.order.Order order = new Order();
         order.addMealToOrder(new Meal(10, 2, "Hamburger"));
         order.addMealToOrder(new Meal(7, 4, "Fries"));
         order.addMealToOrder(new Meal(22, 3, "Pizza"));

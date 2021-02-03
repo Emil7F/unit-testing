@@ -1,9 +1,10 @@
-package pl.emil7f;
+package pl.emil7f.account;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.function.Executable;
+import pl.emil7f.account.Account;
+import pl.emil7f.account.Address;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;

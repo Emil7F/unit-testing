@@ -1,5 +1,7 @@
 package pl.emil7f;
 
+import pl.emil7f.order.Order;
+
 import java.util.ArrayList;
 import java.util.List;
 
