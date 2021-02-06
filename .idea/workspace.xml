@@ -14,14 +14,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d5f8f0b-498d-43c2-8214-2d366e3d4c4a" name="Default Changelist" comment="Hamcrest libary - basic test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/cart/CartHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/cart/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/cart/CartServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/cart/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/order/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/order/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/order/OrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/order/OrderStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/emil7f/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/cart/CartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/emil7f/cart/CartServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/cart/CartServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +200,7 @@
       <workItem from="1612200081505" duration="7239000" />
       <workItem from="1612292542217" duration="3673000" />
       <workItem from="1612372245344" duration="5916000" />
-      <workItem from="1612624561462" duration="1974000" />
+      <workItem from="1612624561462" duration="2278000" />
     </task>
     <servers />
   </component>
@@ -372,6 +365,14 @@
           <url>file://$PROJECT_DIR$/src/main/java/pl/emil7f/account/AccountService.java</url>
           <line>13</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/pl/emil7f/cart/CartServiceTest.java</url>
+          <line>18</line>
+          <properties class="pl.emil7f.cart.CartServiceTest" method="processCartShouldSendToPrepare">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

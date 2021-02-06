@@ -9,6 +9,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasSize;
 import static org.mockito.BDDMockito.given;
+import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.*;
 
 
@@ -30,6 +31,8 @@ class CartServiceTest {
         Cart resultCart = cartService.processCart(cart);
         //then
         verify(cartHandler).sendToPrepare(cart);
+        then(cartHandler).should().sendToPrepare(cart); // -> BDD, analogiczny zapis do tego powyżej
+
         verify(cartHandler,times(1)).sendToPrepare(cart);
 
         InOrder inOrder = inOrder(cartHandler);
