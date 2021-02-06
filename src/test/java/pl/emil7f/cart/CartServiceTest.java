@@ -1,6 +1,7 @@
 package pl.emil7f.cart;
 
 import org.junit.jupiter.api.Test;
+import org.mockito.InOrder;
 import pl.emil7f.order.Order;
 import pl.emil7f.order.OrderStatus;
 
@@ -30,6 +31,11 @@ class CartServiceTest {
         //then
         verify(cartHandler).sendToPrepare(cart);
         verify(cartHandler,times(1)).sendToPrepare(cart);
+
+        InOrder inOrder = inOrder(cartHandler);
+        inOrder.verify(cartHandler).canHandleCart(cart);
+        inOrder.verify(cartHandler).sendToPrepare(cart);
+
         assertThat(resultCart.getOrders(), hasSize(1));
         assertThat(resultCart.getOrders().get(0).getOrderStatus(), equalTo(OrderStatus.PREPARING));
     }
