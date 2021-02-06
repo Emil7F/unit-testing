@@ -33,7 +33,7 @@ class CartServiceTest {
         verify(cartHandler).sendToPrepare(cart);
         then(cartHandler).should().sendToPrepare(cart); // -> BDD, analogiczny zapis do tego powyżej
 
-        verify(cartHandler,times(1)).sendToPrepare(cart);
+        verify(cartHandler, times(1)).sendToPrepare(cart);
 
         InOrder inOrder = inOrder(cartHandler);
         inOrder.verify(cartHandler).canHandleCart(cart);
@@ -41,5 +41,27 @@ class CartServiceTest {
 
         assertThat(resultCart.getOrders(), hasSize(1));
         assertThat(resultCart.getOrders().get(0).getOrderStatus(), equalTo(OrderStatus.PREPARING));
+    }
+
+    @Test
+    void processCartShouldNotSendToPrepare() {
+        // given
+        Order order = new Order();
+        Cart cart = new Cart();
+        cart.addOrderToCart(order);
+
+        CartHandler cartHandler = mock(CartHandler.class);
+        CartService cartService = new CartService(cartHandler);
+
+        given(cartHandler.canHandleCart(cart)).willReturn(false);
+
+        // when
+        Cart resultCart = cartService.processCart(cart);
+        //then
+        verify(cartHandler, never()).sendToPrepare(cart);
+        then(cartHandler).should(never()).sendToPrepare(cart);
+
+        assertThat(resultCart.getOrders(), hasSize(1));
+        assertThat(resultCart.getOrders().get(0).getOrderStatus(), equalTo(OrderStatus.REJECTED));
     }
 }
