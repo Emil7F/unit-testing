@@ -1,8 +1,9 @@
-package pl.emil7f;
+package pl.emil7f.cart;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import pl.emil7f.cart.Cart;
 import pl.emil7f.order.Order;
 
 import java.time.Duration;

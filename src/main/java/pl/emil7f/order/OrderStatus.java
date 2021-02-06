@@ -3,5 +3,7 @@ package pl.emil7f.order;
 public enum OrderStatus {
     ORDERED,
     READY,
-    DELIVERED
+    DELIVERED,
+    PREPARING,
+    REJECTED
 }
