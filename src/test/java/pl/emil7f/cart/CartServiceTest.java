@@ -2,10 +2,7 @@ package pl.emil7f.cart;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.ArgumentCaptor;
-import org.mockito.InOrder;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
+import org.mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
 import pl.emil7f.order.Order;
 import pl.emil7f.order.OrderStatus;
@@ -31,6 +28,8 @@ class CartServiceTest {
     private CartService cartService;
     @Mock
     private CartHandler cartHandler;
+    @Captor
+    private ArgumentCaptor<Cart> argumentCaptor;
 
     @Test
     void processCartShouldSendToPrepare() {
@@ -151,8 +150,6 @@ class CartServiceTest {
         Order order = new Order();
         Cart cart = new Cart();
         cart.addOrderToCart(order);
-
-        ArgumentCaptor<Cart> argumentCaptor = ArgumentCaptor.forClass(Cart.class);
 
         given(cartHandler.canHandleCart(cart)).willReturn(true);
 
