@@ -199,5 +199,52 @@ class CartServiceTest {
         assertThat(resultCart.getOrders().get(0).getOrderStatus(), equalTo(OrderStatus.PREPARING));
     }
 
+    @Test
+    void shouldAnswerWhenProcessCart() {
+        // given
+        Order order = new Order();
+        Cart cart = new Cart();
+        cart.addOrderToCart(order);
+
+        CartHandler cartHandler = mock(CartHandler.class);
+        CartService cartService = new CartService(cartHandler);
+
+        //   1.
+        doAnswer(invocationOnMock -> {
+            Cart argumentCart = invocationOnMock.getArgument(0);
+            argumentCart.clearCart();
+            return true;
+        }).when(cartHandler).canHandleCart(cart);
+
+        // lub 2.
+        when(cartHandler.canHandleCart(cart)).then( i  -> {
+            Cart argumentCart = i.getArgument(0);
+            argumentCart.clearCart();
+            return true;
+        });
+
+        // 1. wariant BDD
+        willAnswer(invocationOnMock -> {
+            Cart argumentCart = invocationOnMock.getArgument(0);
+            argumentCart.clearCart();
+            return true;
+        }).given(cartHandler).canHandleCart(cart);
+
+        // 2. wariant BDD
+        given(cartHandler.canHandleCart(cart)).will( i  -> {
+            Cart argumentCart = i.getArgument(0);
+            argumentCart.clearCart();
+            return true;
+        });
+
+
+        // when
+        Cart resultCart = cartService.processCart(cart);
+        //then
+
+        then(cartHandler).should().sendToPrepare(cart);
+        assertThat(resultCart.getOrders().size(),equalTo(0));
+    }
+
 
 }
