@@ -81,7 +81,7 @@
       <recent name="pl.emil7f" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CartServiceTest.canHandleCartShouldThrowException">
+  <component name="RunManager" selected="JUnit.CartServiceTest.processCartShouldSendToPrepareWithArgumentCaptor">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -125,22 +125,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartServiceTest.processCartShouldNotSendToPrepare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="unit-testing-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.emil7f.cart.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.emil7f.cart" />
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.cart.CartServiceTest" />
-      <option name="METHOD_NAME" value="processCartShouldNotSendToPrepare" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CartServiceTest.processCartShouldNotSendToPrepareWithArgumentMatchers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unit-testing-java" />
       <extension name="coverage">
@@ -152,6 +136,22 @@
       <option name="PACKAGE_NAME" value="pl.emil7f.cart" />
       <option name="MAIN_CLASS_NAME" value="pl.emil7f.cart.CartServiceTest" />
       <option name="METHOD_NAME" value="processCartShouldNotSendToPrepareWithArgumentMatchers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartServiceTest.processCartShouldSendToPrepareWithArgumentCaptor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unit-testing-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.emil7f.cart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.emil7f.cart" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.cart.CartServiceTest" />
+      <option name="METHOD_NAME" value="processCartShouldSendToPrepareWithArgumentCaptor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -175,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CartServiceTest.processCartShouldSendToPrepareWithArgumentCaptor" />
         <item itemvalue="JUnit.CartServiceTest.canHandleCartShouldThrowException" />
         <item itemvalue="JUnit.CartServiceTest.processCartShouldSendToPrepareWithLambdas" />
         <item itemvalue="JUnit.CartServiceTest.canHandleCartShouldReturnMultipleValues" />
         <item itemvalue="JUnit.CartServiceTest.processCartShouldNotSendToPrepareWithArgumentMatchers" />
-        <item itemvalue="JUnit.CartServiceTest.processCartShouldNotSendToPrepare" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +203,7 @@
       <workItem from="1612292542217" duration="3673000" />
       <workItem from="1612372245344" duration="5916000" />
       <workItem from="1612624561462" duration="3497000" />
-      <workItem from="1612713334243" duration="362000" />
+      <workItem from="1612713334243" duration="1074000" />
     </task>
     <servers />
   </component>
@@ -271,28 +271,28 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="310" key="Github.ShareDialog/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608378460883" />
-    <state width="1493" height="571" key="GridCell.Tab.0.bottom" timestamp="1612628060129">
+    <state width="1493" height="571" key="GridCell.Tab.0.bottom" timestamp="1612713891817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="571" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612628060129" />
+    <state width="1493" height="571" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612713891817" />
     <state width="1493" height="331" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966742" />
     <state width="1493" height="326" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
-    <state width="1493" height="571" key="GridCell.Tab.0.center" timestamp="1612628060129">
+    <state width="1493" height="571" key="GridCell.Tab.0.center" timestamp="1612713891817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="571" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612628060129" />
+    <state width="1493" height="571" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612713891817" />
     <state width="1493" height="331" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966741" />
     <state width="1493" height="326" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
-    <state width="1493" height="571" key="GridCell.Tab.0.left" timestamp="1612628060129">
+    <state width="1493" height="571" key="GridCell.Tab.0.left" timestamp="1612713891817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="571" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612628060129" />
+    <state width="1493" height="571" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612713891817" />
     <state width="1493" height="331" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966741" />
     <state width="1493" height="326" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
-    <state width="1493" height="571" key="GridCell.Tab.0.right" timestamp="1612628060129">
+    <state width="1493" height="571" key="GridCell.Tab.0.right" timestamp="1612713891817">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="571" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612628060129" />
+    <state width="1493" height="571" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612713891817" />
     <state width="1493" height="331" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966742" />
     <state width="1493" height="326" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
     <state width="1493" height="415" key="GridCell.Tab.1.bottom" timestamp="1612382829434">
