@@ -81,7 +81,7 @@
       <recent name="pl.emil7f" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CartServiceTest.processCartShouldSendToPrepareWithLambdas">
+  <component name="RunManager" selected="JUnit.CartServiceTest.canHandleCartShouldThrowException">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -104,6 +104,22 @@
       <option name="PACKAGE_NAME" value="pl.emil7f.cart" />
       <option name="MAIN_CLASS_NAME" value="pl.emil7f.cart.CartServiceTest" />
       <option name="METHOD_NAME" value="canHandleCartShouldReturnMultipleValues" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartServiceTest.canHandleCartShouldThrowException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unit-testing-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.emil7f.cart.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.emil7f.cart" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.cart.CartServiceTest" />
+      <option name="METHOD_NAME" value="canHandleCartShouldThrowException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,22 +157,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartServiceTest.processCartShouldSendToPrepare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="unit-testing-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.emil7f.cart.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.emil7f.cart" />
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.cart.CartServiceTest" />
-      <option name="METHOD_NAME" value="processCartShouldSendToPrepare" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CartServiceTest.processCartShouldSendToPrepareWithLambdas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unit-testing-java" />
       <extension name="coverage">
@@ -175,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CartServiceTest.canHandleCartShouldThrowException" />
         <item itemvalue="JUnit.CartServiceTest.processCartShouldSendToPrepareWithLambdas" />
         <item itemvalue="JUnit.CartServiceTest.canHandleCartShouldReturnMultipleValues" />
         <item itemvalue="JUnit.CartServiceTest.processCartShouldNotSendToPrepareWithArgumentMatchers" />
         <item itemvalue="JUnit.CartServiceTest.processCartShouldNotSendToPrepare" />
-        <item itemvalue="JUnit.CartServiceTest.processCartShouldSendToPrepare" />
       </list>
     </recent_temporary>
   </component>
@@ -203,6 +203,7 @@
       <workItem from="1612292542217" duration="3673000" />
       <workItem from="1612372245344" duration="5916000" />
       <workItem from="1612624561462" duration="3497000" />
+      <workItem from="1612713334243" duration="362000" />
     </task>
     <servers />
   </component>
