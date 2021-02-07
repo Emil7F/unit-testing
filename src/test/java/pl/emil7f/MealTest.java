@@ -18,6 +18,8 @@ import static org.hamcrest.Matchers.*;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.DynamicTest.dynamicTest;
+import static org.mockito.BDDMockito.given;
+import static org.mockito.Mockito.mock;
 
 
 class MealTest {
@@ -139,9 +141,9 @@ class MealTest {
 
         );
     }
+
     /**
      * Dynamic test consist of name and an action, this action can be assertion
-     *
      */
     @TestFactory
     Collection<DynamicTest> calculateMealPrices() {
@@ -170,6 +172,21 @@ class MealTest {
 
     private int calculatePrice(int price, int quantity) {
         return price * quantity;
+    }
+
+
+    @Test
+    void testMealSumPrice() {
+        // given
+        Meal meal = mock(Meal.class);
+
+        given(meal.getPrice()).willReturn(15);
+        given(meal.getQuantity()).willReturn(3);
+        given(meal.sumPrice()).willCallRealMethod();
+        // when
+        int result = meal.sumPrice();
+        //then
+        assertThat(result, equalTo(45));
     }
 
 }
