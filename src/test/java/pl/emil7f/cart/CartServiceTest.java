@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.junit.jupiter.MockitoSettings;
+import org.mockito.quality.Strictness;
 import pl.emil7f.order.Order;
 import pl.emil7f.order.OrderStatus;
 
@@ -15,6 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.BDDMockito.*;
 
+@MockitoSettings(strictness = Strictness.STRICT_STUBS)  // allows us to check in what way we use mocks
 @ExtendWith(MockitoExtension.class)
 class CartServiceTest {
     /**
