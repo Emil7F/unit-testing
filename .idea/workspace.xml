@@ -14,8 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d5f8f0b-498d-43c2-8214-2d366e3d4c4a" name="Default Changelist" comment="Hamcrest libary - basic test">
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/MealRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/MealRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pl/emil7f/MealRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/MealRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/meal/MealRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/meal/MealRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pl/emil7f/meal/MealRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/meal/MealRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +70,7 @@
       <recent name="pl.emil7f" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pl.emil7f.meal" />
       <recent name="pl.emil7f.cart" />
       <recent name="pl.emil7f.order" />
       <recent name="pl.emil7f" />
@@ -81,7 +83,7 @@
       <recent name="pl.emil7f" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.pl.emil7f in unit-testing-java">
+  <component name="RunManager" selected="JUnit.MealRepositoryTest.shouldBeAbleToFindNameByStartingLetters">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -110,7 +112,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MealRepositoryTest.shouldBeAbleToFindMealByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MealRepositoryTest.shouldBeAbleToFindMealByExactName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unit-testing-java" />
       <extension name="coverage">
         <pattern>
@@ -120,13 +122,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.emil7f.meal" />
       <option name="MAIN_CLASS_NAME" value="pl.emil7f.meal.MealRepositoryTest" />
-      <option name="METHOD_NAME" value="shouldBeAbleToFindMealByName" />
+      <option name="METHOD_NAME" value="shouldBeAbleToFindMealByExactName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MealRepositoryTest.shouldBeAbleToFindMealByPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MealRepositoryTest.shouldBeAbleToFindNameByStartingLetters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unit-testing-java" />
       <extension name="coverage">
         <pattern>
@@ -136,13 +138,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="pl.emil7f.meal" />
       <option name="MAIN_CLASS_NAME" value="pl.emil7f.meal.MealRepositoryTest" />
-      <option name="METHOD_NAME" value="shouldBeAbleToFindMealByPrice" />
+      <option name="METHOD_NAME" value="shouldBeAbleToFindNameByStartingLetters" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MealRepositoryTest.shouldBeAbleToRemoveMealFromRepository" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MealTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unit-testing-java" />
       <extension name="coverage">
         <pattern>
@@ -151,9 +153,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.emil7f.meal" />
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.meal.MealRepositoryTest" />
-      <option name="METHOD_NAME" value="shouldBeAbleToRemoveMealFromRepository" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.meal.MealTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -174,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MealRepositoryTest.shouldBeAbleToFindNameByStartingLetters" />
+        <item itemvalue="JUnit.MealRepositoryTest.shouldBeAbleToFindMealByExactName" />
+        <item itemvalue="JUnit.MealTest" />
         <item itemvalue="JUnit.pl.emil7f in unit-testing-java" />
         <item itemvalue="JUnit.MealRepositoryTest" />
-        <item itemvalue="JUnit.MealRepositoryTest.shouldBeAbleToFindMealByPrice" />
-        <item itemvalue="JUnit.MealRepositoryTest.shouldBeAbleToFindMealByName" />
-        <item itemvalue="JUnit.MealRepositoryTest.shouldBeAbleToRemoveMealFromRepository" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +204,7 @@
       <workItem from="1612372245344" duration="5916000" />
       <workItem from="1612624561462" duration="3497000" />
       <workItem from="1612713334243" duration="8796000" />
-      <workItem from="1612809583152" duration="2392000" />
+      <workItem from="1612809583152" duration="3036000" />
     </task>
     <servers />
   </component>
@@ -249,10 +250,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="386" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612374398049" />
-    <state x="551" y="281" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1612625343732">
+    <state x="551" y="281" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1612812363337">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="551" y="281" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612625343732" />
+    <state x="551" y="281" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612812363337" />
     <state x="566" y="294" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1612374404322">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -271,28 +272,28 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="310" key="Github.ShareDialog/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608378460883" />
-    <state width="1493" height="255" key="GridCell.Tab.0.bottom" timestamp="1612811888932">
+    <state width="1493" height="255" key="GridCell.Tab.0.bottom" timestamp="1612812800078">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612811888932" />
+    <state width="1493" height="255" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612812800078" />
     <state width="1493" height="331" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966742" />
     <state width="1493" height="326" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
-    <state width="1493" height="255" key="GridCell.Tab.0.center" timestamp="1612811888932">
+    <state width="1493" height="255" key="GridCell.Tab.0.center" timestamp="1612812800078">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612811888932" />
+    <state width="1493" height="255" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612812800078" />
     <state width="1493" height="331" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966741" />
     <state width="1493" height="326" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
-    <state width="1493" height="255" key="GridCell.Tab.0.left" timestamp="1612811888932">
+    <state width="1493" height="255" key="GridCell.Tab.0.left" timestamp="1612812800077">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612811888932" />
+    <state width="1493" height="255" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612812800077" />
     <state width="1493" height="331" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966741" />
     <state width="1493" height="326" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
-    <state width="1493" height="255" key="GridCell.Tab.0.right" timestamp="1612811888932">
+    <state width="1493" height="255" key="GridCell.Tab.0.right" timestamp="1612812800078">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612811888932" />
+    <state width="1493" height="255" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612812800078" />
     <state width="1493" height="331" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966742" />
     <state width="1493" height="326" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
     <state width="1493" height="415" key="GridCell.Tab.1.bottom" timestamp="1612382829434">
@@ -361,7 +362,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/pl/emil7f/order/OrderBackupTest.java</url>
-          <line>9</line>
+          <line>7</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
