@@ -22,6 +22,10 @@ public class Meal {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public Meal(int price) {
         this.price = price;
     }
