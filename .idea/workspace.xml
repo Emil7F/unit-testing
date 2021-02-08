@@ -14,8 +14,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d5f8f0b-498d-43c2-8214-2d366e3d4c4a" name="Default Changelist" comment="Hamcrest libary - basic test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/Meal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/Meal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/emil7f/MealRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/emil7f/MealRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pl/emil7f/MealRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pl/emil7f/MealRepositoryTest.java" afterDir="false" />
     </list>
@@ -83,7 +81,7 @@
       <recent name="pl.emil7f" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MealRepositoryTest">
+  <component name="RunManager" selected="JUnit.pl.emil7f in unit-testing-java">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -101,29 +99,13 @@
       <module name="unit-testing-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.emil7f.*" />
+          <option name="PATTERN" value="pl.emil7f.meal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.emil7f" />
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.MealRepositoryTest" />
+      <option name="PACKAGE_NAME" value="pl.emil7f.meal" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.meal.MealRepositoryTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MealRepositoryTest.shouldBeAbleToAddMealToRepository" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="unit-testing-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pl.emil7f.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pl.emil7f" />
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.MealRepositoryTest" />
-      <option name="METHOD_NAME" value="shouldBeAbleToAddMealToRepository" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,13 +114,29 @@
       <module name="unit-testing-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.emil7f.*" />
+          <option name="PATTERN" value="pl.emil7f.meal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.emil7f" />
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.MealRepositoryTest" />
+      <option name="PACKAGE_NAME" value="pl.emil7f.meal" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.meal.MealRepositoryTest" />
       <option name="METHOD_NAME" value="shouldBeAbleToFindMealByName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MealRepositoryTest.shouldBeAbleToFindMealByPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="unit-testing-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.emil7f.meal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.emil7f.meal" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.meal.MealRepositoryTest" />
+      <option name="METHOD_NAME" value="shouldBeAbleToFindMealByPrice" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,19 +146,19 @@
       <module name="unit-testing-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pl.emil7f.*" />
+          <option name="PATTERN" value="pl.emil7f.meal.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pl.emil7f" />
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.MealRepositoryTest" />
+      <option name="PACKAGE_NAME" value="pl.emil7f.meal" />
+      <option name="MAIN_CLASS_NAME" value="pl.emil7f.meal.MealRepositoryTest" />
       <option name="METHOD_NAME" value="shouldBeAbleToRemoveMealFromRepository" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MealTest.testMealSumPriceWithSpy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="pl.emil7f in unit-testing-java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="unit-testing-java" />
       <extension name="coverage">
         <pattern>
@@ -169,20 +167,18 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pl.emil7f" />
-      <option name="MAIN_CLASS_NAME" value="pl.emil7f.MealTest" />
-      <option name="METHOD_NAME" value="testMealSumPriceWithSpy" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.pl.emil7f in unit-testing-java" />
         <item itemvalue="JUnit.MealRepositoryTest" />
+        <item itemvalue="JUnit.MealRepositoryTest.shouldBeAbleToFindMealByPrice" />
         <item itemvalue="JUnit.MealRepositoryTest.shouldBeAbleToFindMealByName" />
         <item itemvalue="JUnit.MealRepositoryTest.shouldBeAbleToRemoveMealFromRepository" />
-        <item itemvalue="JUnit.MealRepositoryTest.shouldBeAbleToAddMealToRepository" />
-        <item itemvalue="JUnit.MealTest.testMealSumPriceWithSpy" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +203,7 @@
       <workItem from="1612372245344" duration="5916000" />
       <workItem from="1612624561462" duration="3497000" />
       <workItem from="1612713334243" duration="8796000" />
-      <workItem from="1612809583152" duration="2046000" />
+      <workItem from="1612809583152" duration="2392000" />
     </task>
     <servers />
   </component>
@@ -275,28 +271,28 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="631" y="310" key="Github.ShareDialog/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608378460883" />
-    <state width="1493" height="255" key="GridCell.Tab.0.bottom" timestamp="1612811803761">
+    <state width="1493" height="255" key="GridCell.Tab.0.bottom" timestamp="1612811888932">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612811803761" />
+    <state width="1493" height="255" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612811888932" />
     <state width="1493" height="331" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966742" />
     <state width="1493" height="326" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
-    <state width="1493" height="255" key="GridCell.Tab.0.center" timestamp="1612811803760">
+    <state width="1493" height="255" key="GridCell.Tab.0.center" timestamp="1612811888932">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612811803760" />
+    <state width="1493" height="255" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612811888932" />
     <state width="1493" height="331" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966741" />
     <state width="1493" height="326" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
-    <state width="1493" height="255" key="GridCell.Tab.0.left" timestamp="1612811803760">
+    <state width="1493" height="255" key="GridCell.Tab.0.left" timestamp="1612811888932">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612811803760" />
+    <state width="1493" height="255" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612811888932" />
     <state width="1493" height="331" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966741" />
     <state width="1493" height="326" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
-    <state width="1493" height="255" key="GridCell.Tab.0.right" timestamp="1612811803760">
+    <state width="1493" height="255" key="GridCell.Tab.0.right" timestamp="1612811888932">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612811803760" />
+    <state width="1493" height="255" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1612811888932" />
     <state width="1493" height="331" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1160@0.0.1536.824" timestamp="1608580966742" />
     <state width="1493" height="326" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608400060691" />
     <state width="1493" height="415" key="GridCell.Tab.1.bottom" timestamp="1612382829434">

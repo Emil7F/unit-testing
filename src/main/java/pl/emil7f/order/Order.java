@@ -1,6 +1,6 @@
 package pl.emil7f.order;
 
-import pl.emil7f.Meal;
+import pl.emil7f.meal.Meal;
 
 import java.util.ArrayList;
 import java.util.List;

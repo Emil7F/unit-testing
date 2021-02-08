@@ -1,4 +1,4 @@
-package pl.emil7f;
+package pl.emil7f.meal;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +24,12 @@ public class MealRepository {
     public List<Meal> findByName(String mealName) {
         return meals.stream()
                 .filter(meal -> meal.getName().equals(mealName))
+                .collect(Collectors.toList());
+    }
+
+    public List<Meal> findByPrice(int price) {
+        return meals.stream()
+                .filter(meal -> meal.getPrice()==(price))
                 .collect(Collectors.toList());
     }
 }

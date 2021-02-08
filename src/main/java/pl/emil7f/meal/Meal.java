@@ -1,4 +1,4 @@
-package pl.emil7f;
+package pl.emil7f.meal;
 
 import java.util.Objects;
 

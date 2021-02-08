@@ -1,4 +1,4 @@
-package pl.emil7f;
+package pl.emil7f.meal;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.extension.ExtendWith;

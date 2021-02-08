@@ -1,9 +1,7 @@
 package pl.emil7f.order;
 
 import org.junit.jupiter.api.*;
-import pl.emil7f.Meal;
-import pl.emil7f.order.Order;
-import pl.emil7f.order.OrderBackup;
+import pl.emil7f.meal.Meal;
 
 import java.io.IOException;
 
